@@ -11,6 +11,14 @@ PetsyPetz is a modern, high-end pet marketplace and community platform built wit
 - **Admin Dashboard**: Comprehensive management interface for handling media, hero sections, and platform content.
 - **Premium UI/UX**: Built with modern aesthetics, including glassmorphism, smooth CSS transitions, and responsive layouts.
 
+## 📸 Screenshots
+
+### Home Page
+![PetsyPetz Home Page](public/screenshots/home.png)
+
+### Authentication Page
+![PetsyPetz Auth Page](public/screenshots/auth.png)
+
 ## 🛠️ Tech Stack
 
 - **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
