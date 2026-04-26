@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PetsyPetz 🐾
 
-## Getting Started
+PetsyPetz is a modern, high-end pet marketplace and community platform built with Next.js. It features a premium design with smooth animations, interactive pet contests, and a robust administrative dashboard for content management.
 
-First, run the development server:
+## ✨ Key Features
+
+- **Pet Marketplace**: A curated selection of premium pets with detailed profiles and glassmorphic card designs.
+- **Pet Contests**: Interactive community contests where users can vote and showcase their pets.
+- **Dynamic Stats**: Live-updating platform statistics with interactive toggles.
+- **Authentication**: Dedicated secure authentication system for users and administrators.
+- **Admin Dashboard**: Comprehensive management interface for handling media, hero sections, and platform content.
+- **Premium UI/UX**: Built with modern aesthetics, including glassmorphism, smooth CSS transitions, and responsive layouts.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Styling**: [Vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Modern Custom Properties & Utilities)
+- **Database**: [SQLite](https://sqlite.org/) via [Prisma ORM](https://www.prisma.io/)
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Development**: TypeScript, pnpm
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- pnpm (recommended) or npm/yarn
+
+### Installation
+
+1. **Clone or Extract the project**:
+   ```bash
+   cd petsypetz
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   pnpm install
+   ```
+
+3. **Configure Environment Variables**:
+   Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+### Database Setup
+
+Initialize the SQLite database and run migrations:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx prisma migrate dev --name init
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev
+```
 
-## Learn More
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app`: Next.js App Router pages and API routes.
+- `src/components`: Reusable UI components (Hero, Navbar, StatsStrip, etc.).
+- `src/lib`: Shared utilities and database clients.
+- `src/store`: Global state management using Zustand.
+- `prisma`: Database schema and migration history.
+- `public`: Static assets and media files.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 Legacy Design Reference
 
-## Deploy on Vercel
+For reference, the original static design file is included in the root as `petsypetz (1).html`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with passion for pets and premium code.*
